@@ -1,0 +1,8 @@
+[project]
+name = "trydal-docs"
+version = "0.1.0"
+description = "Trydal infrastructure and research documentation"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material>=9.6",
+]

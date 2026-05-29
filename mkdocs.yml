@@ -1,0 +1,91 @@
+site_name: Trydal Docs
+site_url: https://trydal.io/docs
+repo_url: https://github.com/espentrydal/trydal-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Infrastructure:
+      - infrastructure/index.md
+      - Networking: infrastructure/networking.md
+      - DNS: infrastructure/dns.md
+      - Services: infrastructure/services.md
+      - Proxmox: infrastructure/proxmox.md
+  - LLM Server:
+      - llm-server/index.md
+      - DeepSeek V4: llm-server/deepseek-v4.md
+      - Qwen: llm-server/qwen.md
+      - Performance: llm-server/performance.md
+  - PhD Workspace:
+      - phd-workspace/README.md
+      - Docs:
+          - phd-workspace/docs/onboarding/00-first-30-minutes.md
+          - phd-workspace/docs/onboarding/01-architecture.md
+          - phd-workspace/docs/onboarding/02-setup.md
+          - phd-workspace/docs/onboarding/03-codebase.md
+          - phd-workspace/docs/onboarding/04-experiments.md
+          - phd-workspace/docs/onboarding/05-extending.md
+          - phd-workspace/docs/onboarding/06-hydra.md
+          - phd-workspace/docs/onboarding/07-lightning.md
+          - phd-workspace/docs/onboarding/08-dvc.md
+          - phd-workspace/docs/onboarding/09-ray.md
+          - phd-workspace/docs/onboarding/10-debugging.md
+          - phd-workspace/docs/onboarding/11-reference.md
+          - phd-workspace/docs/onboarding/12-new-lab-member.md
+          - phd-workspace/docs/onboarding/20-code-training.md
+          - phd-workspace/docs/onboarding/22-code-config.md
+      - Runbooks:
+          - phd-workspace/docs/runbooks/command-catalog.md
+          - phd-workspace/docs/runbooks/setting-up-runs.md
+          - phd-workspace/docs/runbooks/storage-layout.md
+          - phd-workspace/docs/runbooks/hardware-routing.md
+          - phd-workspace/docs/runbooks/path-conventions.md
+      - Plans:
+          - phd-workspace/plans/README.md
+  - Hermes:
+      - hermes/index.md
+      - ML Intern: hermes/ml-intern.md
+  - Runbook:
+      - runbook/index.md
