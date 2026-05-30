@@ -1,4 +1,4 @@
 site/
 .venv/
 __pycache__/
-docs/phd-workspace/
+docs/phd-workspace
