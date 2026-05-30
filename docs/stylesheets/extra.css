@@ -1,0 +1,24 @@
+/* Wider content column — better for code blocks and tables */
+.md-grid {
+  max-width: 64rem;
+}
+
+/* Improve code block readability */
+.highlight pre {
+  line-height: 1.5;
+}
+
+/* More breathing room in tables */
+.md-typeset__table {
+  line-height: 1.6;
+}
+
+/* Subtle distinction for admonitions */
+.md-typeset .admonition {
+  font-size: 0.95rem;
+}
+
+/* Back-to-top button visibility */
+.md-top {
+  color: var(--md-default-fg-color);
+}
